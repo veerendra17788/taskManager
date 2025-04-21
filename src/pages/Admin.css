@@ -1,0 +1,235 @@
+/* src/pages/Admin.css */
+
+.admin-container {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+  }
+  
+  .admin-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #1976d2;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .admin-content {
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+  }
+  
+  .members-section,
+  .create-task-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .members-section h3,
+  .create-task-section h3 {
+    margin-bottom: 15px;
+  }
+  
+  .members-section input,
+  .create-task-section input,
+  .create-task-section textarea,
+  .create-task-section select {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .members-section button,
+  .create-task-section button {
+    background-color: #1976d2;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .members-section button:hover,
+  .create-task-section button:hover {
+    background-color: #1565c0;
+  }
+  
+  .members-section ul {
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .members-section li {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .members-section li button {
+    background-color: #e53935;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .members-section li button:hover {
+    background-color: #c62828;
+  }
+  
+  /* Kanban Board */
+  .kanban-section {
+    grid-column: 1 / 3;
+    margin-top: 30px;
+  }
+  
+  .kanban-section h3 {
+    margin-bottom: 20px;
+  }
+  
+  .kanban-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .kanban-column {
+    flex: 1;
+    background-color: #e3f2fd;
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 300px;
+  }
+  
+  .kanban-column h4 {
+    text-align: center;
+    color: #0d47a1;
+    margin-bottom: 10px;
+  }
+  
+  .task-card {
+    background-color: #fff;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-card h5 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #1976d2;
+  }
+  
+  .task-card p {
+    margin: 6px 0;
+    font-size: 0.95rem;
+  }
+  
+  .task-card button {
+    margin-top: 8px;
+    padding: 6px 10px;
+    background-color: #f9a825;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .task-card button:hover {
+    background-color: #f57f17;
+  }
+  
+
+  .admin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9f9f9;
+  }
+  
+  .admin-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .admin-subtitle {
+    color: #555;
+  }
+  
+  .admin-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  
+  .members-section,
+  .create-task-section,
+  .kanban-board {
+    flex: 1 1 300px;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+  }
+  
+  .add-member {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .add-member input {
+    flex: 1;
+  }
+  
+  .member-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .member-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .kanban-columns {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    overflow-x: auto;
+  }
+  
+  .kanban-column {
+    background: #f0f4f8;
+    padding: 1rem;
+    border-radius: 8px;
+    min-width: 250px;
+    max-height: 500px;
+    overflow-y: auto;
+  }
+  
+  .task-card {
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #ccc;
+  }
+  

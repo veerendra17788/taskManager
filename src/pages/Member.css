@@ -1,0 +1,247 @@
+/* src/pages/Member.css */
+
+.member-container {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+}
+
+.member-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #1976d2;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.member-content {
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+}
+
+.tasks-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tasks-section h3 {
+    margin-bottom: 15px;
+}
+
+.tasks-section ul {
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.tasks-section li {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tasks-section li button {
+    background-color: #e53935;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.tasks-section li button:hover {
+    background-color: #c62828;
+}
+
+/* Task Details Section */
+.task-details-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.task-details-section h3 {
+    margin-bottom: 15px;
+}
+
+.task-details-section p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.task-details-section button {
+    background-color: #1976d2;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.task-details-section button:hover {
+    background-color: #1565c0;
+}
+
+/* Task Card Styling */
+.task-card {
+    background-color: #fff;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-card h5 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #1976d2;
+}
+
+.task-card p {
+    margin: 6px 0;
+    font-size: 0.95rem;
+}
+
+.task-card button {
+    margin-top: 8px;
+    padding: 6px 10px;
+    background-color: #f9a825;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-card button:hover {
+    background-color: #f57f17;
+}
+
+/* src/pages/Member.css */
+
+.member-container {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+}
+
+.member-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #1976d2;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.member-content {
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+}
+
+.visualization-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.visualization-section h3 {
+    margin-bottom: 15px;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.chart {
+    flex: 1;
+    text-align: center;
+}
+
+.chart h4 {
+    margin-bottom: 12px;
+}
+
+.overdue-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.overdue-section h3 {
+    margin-bottom: 15px;
+}
+
+.overdue-section ul {
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.overdue-section li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+.member-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .member-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .create-task-section input,
+  .create-task-section textarea,
+  .create-task-section select,
+  .create-task-section button {
+    display: block;
+    margin: 5px 0;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  .kanban-columns {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .kanban-column {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    min-width: 200px;
+    flex: 1;
+  }
+  
+  .task-card {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  

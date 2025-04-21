@@ -1,0 +1,38 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"  # React app exposed on port 80 inside the container
+    networks:
+      - my-network
+
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"  # Backend exposed on port 5000
+    environment:
+      - DATABASE_URL=postgres://veeru0115:0115@my-postgres:5432/taskmanager  # Database connection with username 'veeru0115' and password '0115'
+    depends_on:
+      - my-postgres
+    networks:
+      - my-network
+
+  my-postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: veeru0115  # PostgreSQL username 'veeru0115'
+      POSTGRES_PASSWORD: 0115  # PostgreSQL password '0115'
+      POSTGRES_DB: taskmanager  # Database name
+    ports:
+      - "5432:5432"
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
